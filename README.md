@@ -17,6 +17,7 @@ Tạo 1 web app để đăng ký và nhận diện khuôn mặt
     - OS: windows 10 
     - RAM: trên 4G
     - IDE: khuyến khích dùng Pycharm
+    - quản lý code: dùng github
         
 3. Các chức năng
     - Chức năng bắt buộc
