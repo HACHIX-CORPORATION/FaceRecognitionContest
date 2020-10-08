@@ -45,7 +45,7 @@ Tạo 1 web app để đăng ký và nhận diện khuôn mặt
     bao gồm
         - dùng api nhận diện mặt của azure
         - dùng dlib của python
-        - dùng các mạng neura network
+        - dùng các mạng neural network
     - 17/10~24/10: xây dựng chức năng đăng ký khuôn mặt
     - 24/10~7/11: xây dựng chức năng nhận diện khuôn mặt
     - 7/11~14/11: xây dựng chức năng phản hồi và nâng cao chức năng nhận diện khuôn mặt
