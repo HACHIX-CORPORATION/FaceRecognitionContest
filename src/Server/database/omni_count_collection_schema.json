@@ -1,0 +1,12 @@
+{
+    "$jsonSchema":{
+        "bsonType": "object",
+         "required": [ "count"],
+         "properties": {
+            "count": {
+                "bsonType": "int",
+                "description": "must be a number and is unique"
+            }
+         }    
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "$jsonSchema":{
+        "bsonType": "object",
+         "required": [ "name", "id", "department"],
+         "properties": {
+            "_id": {
+                "bsonType": "string",
+                "description": "must be a string and is unique"
+            },
+            "id": {
+                "bsonType": "string",
+                "description": "must be a number and is unique"
+            },
+            "name": {
+                "bsonType": "string",
+                "description": "must be a string and is required"
+            },
+            "department": {
+                "bsonType": "string",
+                "description": "must be a string and is required"
+            }
+         }    
+    }
+}

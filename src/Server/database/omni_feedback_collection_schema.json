@@ -1,0 +1,37 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "file_name",
+      "wrong_id",
+      "correct_id",
+      "ts"
+    ],
+    "properties": {
+      "file_name": {
+        "bsonType": "string",
+        "description": "must be a string and is required"
+      },
+      "wrong_id": {
+        "bsonType": "string",
+        "description": "must be a string and is required"
+      },
+      "wrong_name": {
+        "bsonType": "string",
+        "description": "must be a string and is required"
+      },
+      "correct_id": {
+        "bsonType": "string",
+        "description": "must be a string and is required"
+      },
+      "correct_name": {
+        "bsonType": "string",
+        "description": "must be a string and is required"
+      },
+      "ts": {
+        "bsonType": "number",
+        "description": "must be a number and is required"
+      }
+    }
+  }
+}

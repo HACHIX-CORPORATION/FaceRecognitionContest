@@ -1,0 +1,16 @@
+.DS_Store
+.idea/
+__pycache__/
+*.pyc
+*.jpg
+*.jpeg
+.vscode
+Client/static/assets/FalseRecognition
+
+src/server/engine/API/secret.py
+
+Client/static/node_modules
+Client/static/public/main.js
+Server/engine/recognition_images/
+Server/uploads/images/
+Server/engine/facenet/model/SVM_classifer.pkl
