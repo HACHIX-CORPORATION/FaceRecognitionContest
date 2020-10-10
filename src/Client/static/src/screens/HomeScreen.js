@@ -81,7 +81,7 @@ function HomeScreen(props) {
         < div className={classes.root}>
             < div
                 className={classes.title}>
-                < h2> {t("Omni 顔認証")}</h2>
+                < h2> {t("Talent5 Face Recognition Contest")}</h2>
             </div>
             <CssBaseline />
             <Container fixed>
@@ -91,13 +91,13 @@ function HomeScreen(props) {
                             color="primary"
                             variant="contained"
                             onClick={register}
-                        >登録</Button>
+                        >Register</Button>
                         <Button className={classes.button}
                             color="primary"
                             variant="contained"
                             primary=""
                             onClick={authenticate}
-                        >認証</Button>
+                        >Recognition</Button>
                     </div>
                     <Divider />
                     {authenticateMode ? <Authentication settings={videoConstraints} rerenderParentCallback={rerenderParentCallback} /> : ""}

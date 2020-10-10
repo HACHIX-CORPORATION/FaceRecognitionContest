@@ -103,11 +103,11 @@ function StatisticScreen(props) {
                             <img width="320px" height="240px" src={imgsrc}/>
                             <Grid container direction="row">
                                 <h4 className={classes.space}>正解ID：{item.correct_id}</h4>
-                                <h4 className={classes.space}>誤認識ID: {item.wrong_id}</h4>
+                                <h4 className={classes.space}>誤ID: {item.wrong_id}</h4>
                             </Grid>
                         </Grid>
                     )
-                }):(<h3>誤認識画像が存在しません。</h3>)}
+                }):(<h3>誤画像が存在しません。</h3>)}
             </Grid>
         )
     }
@@ -118,7 +118,7 @@ function StatisticScreen(props) {
         < div className={classes.root}>
             < div
                 className={classes.title}>
-                < h2> {t("認識性能指標")}</h2>
+                < h2> {t("Performance")}</h2>
             </div>
             <CssBaseline />
             <Container fixed>
@@ -126,12 +126,12 @@ function StatisticScreen(props) {
                     <Card className={classes.root}>
                         <CardActions>
                             <Button color="primary" variant="contained" color="primary">
-                                正解率: {correctProp}%
+                                Tỷ lệ chính xác: {correctProp}%
         </Button>
                         </CardActions>
                         <CardActions>
                             <Button color="primary" variant="contained" color="primary" onClick={onShowSamples}>
-                                {!showSample ? "誤認識確認" : "誤認識を閉じる"}
+                                {!showSample ? "Tỷ lệ nhận diện sai" : "誤を閉じる"}
                             </Button>
                         </CardActions>
                         {showSample ? renderSamples() : ""}

@@ -44,14 +44,14 @@ class MyApp extends Component {
                                         this.setState({tab: newValue})
                                     }
                                 > <Tab
-                                    label={t("ホーム")}
+                                    label={t("Home")}
                                     value="one"
                                     to={"/"}
                                     component={Link}
                                     {...a11yProps("one")}
                                 />
                                 <Tab
-                                    label={t("性能指標")}
+                                    label={t("Performance")}
                                     value="two"
                                     to={"/statistic"}
                                     component={Link}

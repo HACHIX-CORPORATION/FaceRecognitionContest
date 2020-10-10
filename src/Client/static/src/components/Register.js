@@ -139,7 +139,7 @@ function Register(props) {
             setLoading(false);
             setShowImg(false);
             if (data.errcode == 0) {
-                alert("登録が成功しました。")
+                alert("Registerが成功しました。")
                 setState({
                     name: "",
                     id: "",
@@ -147,7 +147,7 @@ function Register(props) {
                 })
                 setUserID("");
             } else {
-                alert("登録が失敗しました。" + data.msg);
+                alert("Registerが失敗しました。" + data.msg);
             }
             setEnableWebcam(false);
             setShowInputForm(false);
@@ -191,14 +191,14 @@ function Register(props) {
             }
         }
         return {
-            name: "IDが選択されていません。",
-            department: "IDが選択されていません。",
-            id: "IDが選択されていません。"
+            name: "Please choose Id。",
+            department: "Please choose Id。",
+            id: "Please choose Id。"
         }
     }
     const renderUserInfo = (userid) => {
         if (userid == "") {
-            userid = "IDが選択されていません。"
+            userid = "Please choose Id。"
         }
         var userInfo = getUserInfoFromID(userid);
         return (
@@ -231,13 +231,13 @@ function Register(props) {
                     onClick={handleSendPictureButton}
                     className={classes.button}
                     disabled={loading}>
-                    送信</Button>
+                    Submit</Button>
                 <Button onClick={handleCancelButton}
                     color="primary"
                     variant="contained"
                     className={classes.button}
                     disabled={loading}
-                >キャンセル</Button>
+                >Cancel</Button>
             </div>
         )
     }
@@ -255,7 +255,7 @@ function Register(props) {
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
             >
-                <DialogTitle id="alert-dialog-title">{"以下の画像を送信しますか?"}</DialogTitle>
+                <DialogTitle id="alert-dialog-title">{"以下の画像をSubmitしますか?"}</DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">
                         {showImg ?
@@ -268,7 +268,7 @@ function Register(props) {
                         いいえ、撮り直します。
           </Button>
                     <Button onClick={registerPicture} color="primary" autoFocus>
-                        はい、送信します。
+                        はい、Submitします。
           </Button>
                 </DialogActions>
             </Dialog>
@@ -278,7 +278,7 @@ function Register(props) {
     return (
         <Paper className={classes.paper}>
             <div className={classes.title}>
-                ユーザー画像情報登録
+                Register
             </div>
             <Grid
                 container

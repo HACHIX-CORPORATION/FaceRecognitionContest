@@ -121,9 +121,9 @@ function Authentication(props) {
             }
         }
         return {
-            name: "IDが選択されていません。",
-            department: "IDが選択されていません。",
-            id: "IDが選択されていません。"
+            name: "Please choose Id。",
+            department: "Please choose Id。",
+            id: "Please choose Id。"
         }
     }
 
@@ -202,7 +202,7 @@ function Authentication(props) {
         }).then(function (data) {
             console.log(data);
             if(data.errcode!=-1){
-                alert("正解ラベルを送信完了しました。")
+                alert("正解ラベルをSubmit完了しました。")
             }
             else{
                 alert("エラー: "+data.msg);
@@ -228,7 +228,7 @@ function Authentication(props) {
         }).then(function (data) {
             console.log(data);
             if(data.errcode!=-1){
-                alert("正解ラベルを送信完了しました。")
+                alert("正解ラベルをSubmit完了しました。")
             }
             else{
                 alert("error: "+data.msg);
@@ -247,7 +247,7 @@ function Authentication(props) {
 
     const renderAuthInfo = () => {
         return (
-            <div>認証結果:{authenticationInfo}</div>
+            <div>Recognition結果:{authenticationInfo}</div>
         )
     }
 
@@ -258,10 +258,10 @@ function Authentication(props) {
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
             >
-                <DialogTitle id="alert-dialog-title">{"認証結果"}</DialogTitle>
+                <DialogTitle id="alert-dialog-title">{"Recognition結果"}</DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">
-                        システムが認証したID: {dialogMsg.id != -1 ? dialogMsg.id : "認識できませんでした。"}
+                        システムがRecognitionしたID: {dialogMsg.id != -1 ? dialogMsg.id : "できませんでした。"}
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>
@@ -288,7 +288,7 @@ function Authentication(props) {
                 aria-labelledby="alert-dialog-title"
                 aria-describedby="alert-dialog-description"
             >
-                <DialogTitle id="alert-dialog-title">{"以下の画像で認証しますか?"}</DialogTitle>
+                <DialogTitle id="alert-dialog-title">{"以下の画像でRecognitionしますか?"}</DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">
                         {image ?
@@ -301,7 +301,7 @@ function Authentication(props) {
                         いいえ、撮り直します。
           </Button>
                     <Button onClick={onAuthentication} color="primary" autoFocus>
-                        はい、送信します。
+                        はい、Submitします。
           </Button>
                 </DialogActions>
             </Dialog>
@@ -340,9 +340,9 @@ function Authentication(props) {
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={handleCancelButton} color="primary">
-                            キャンセル</Button>
+                            Cancel</Button>
                         <Button onClick={handleCloseSelectDialog} color="primary" autoFocus>
-                            送信</Button>
+                            Submit</Button>
                     </DialogActions>
                 </Dialog>
             </div >
@@ -353,7 +353,7 @@ function Authentication(props) {
     return (
         <Paper className={classes.paper}>
             <div className={classes.title}>
-                ユーザー認証
+                ユーザーRecognition
             </div>
             <Grid
                 container
@@ -384,7 +384,7 @@ function Authentication(props) {
                         variant="contained"
                         className={classes.button}
                         disabled={loading}
-                    >キャンセル</Button>
+                    >Cancel</Button>
                 </div>
                 {loading && <CircularProgress size={72} className={classes.buttonProgress} />}
 
