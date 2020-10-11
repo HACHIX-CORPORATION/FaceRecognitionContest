@@ -8,7 +8,7 @@ Tạo 1 web app để đăng ký và nhận diện khuôn mặt
     - BackEnd
         - Ngôn ngữ: Python
         - Framework : Flask
-        - DataBase: MySql
+        - DataBase: MongoDB
     - FrontEnd
         - Ngôn ngữ: Javascript
         - Framework: React

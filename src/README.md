@@ -3,7 +3,6 @@
 2. cd src
 3. pip install -r requirements.txt
 
-
 ## Run Server
 1. `cd Client/static`  
 2. `npm run dev`  
