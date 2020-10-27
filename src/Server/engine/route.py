@@ -61,6 +61,7 @@ def recognize():
             img_file_name = "{}.jpeg".format(now.timestamp())
             img_file_path = os.path.join(img_dir, img_file_name)
             img_data.save(img_file_path)
+            img_data = img_data.resize(160, 160)
 
             # with open(img_file_path, "wb+") as g:
             #     g.write(img_data)

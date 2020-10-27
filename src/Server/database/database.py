@@ -76,6 +76,7 @@ class DbController(metaclass=SingletonMetaDB):
                         DbController.client = client
                         break
                 except Exception as ex:
+                    print("exception = {}".format(ex))
                     count += 1
                     time.sleep(DbController.retry_interval)
 

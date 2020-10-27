@@ -10,6 +10,7 @@ from uploads.route import uploads, files
 from engine.route import engine
 from api.api import api
 
+# 1. Flask 2. Django
 # アプリケーションのインスタンス生成
 app = Flask(__name__,
             instance_relative_config=True,
@@ -48,4 +49,4 @@ if __name__ == "__main__":
     # アプリケーション開始
     # TODO: Trungとの確認が必要
     # 確認内容: threaded=Trueに変えた方が良い
-    app.run(host='0.0.0.0', port=3000, ssl_context=context, threaded=False, debug=False)
+    app.run(host='0.0.0.0', port=3000, ssl_context=context, threaded=False, debug=True)
