@@ -2100,3 +2100,9 @@
 2020-11-01 11:19:53,138 - ERROR - test error test10_001_error
 2020-11-01 11:19:53,140 - INFO - test info: test20_001_info
 2020-11-01 11:19:53,140 - WARNING - test info: test30_001_warning
+2020-11-01 12:26:34,541 - ERROR - test error test10_001_error
+2020-11-01 12:26:34,542 - INFO - test info: test20_001_info
+2020-11-01 12:26:34,545 - WARNING - test info: test30_001_warning
+2020-11-01 12:27:25,572 - ERROR - test error test10_001_error
+2020-11-01 12:27:25,573 - INFO - test info: test20_001_info
+2020-11-01 12:27:25,574 - WARNING - test info: test30_001_warning
