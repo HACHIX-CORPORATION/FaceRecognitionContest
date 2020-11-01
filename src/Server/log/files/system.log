@@ -2094,3 +2094,9 @@
 2020-02-17 14:31:00,465 - INFO - process_inputdata.data_transfomer __chk_file_directory_exist() ended. runtime = 0:00:00.000017
 2020-02-17 14:31:00,465 - INFO - process_inputdata.data_transfomer __chk_file_directory_exist() ended. runtime = 0:00:00.000017
 2020-02-17 14:31:00,465 - INFO - process_inputdata.data_transfomer __chk_file_directory_exist() ended. runtime = 0:00:00.000017
+2020-11-01 11:19:43,803 - ERROR - test error test10_001_error
+2020-11-01 11:19:43,803 - INFO - test info: test20_001_info
+2020-11-01 11:19:43,804 - WARNING - test info: test30_001_warning
+2020-11-01 11:19:53,138 - ERROR - test error test10_001_error
+2020-11-01 11:19:53,140 - INFO - test info: test20_001_info
+2020-11-01 11:19:53,140 - WARNING - test info: test30_001_warning
